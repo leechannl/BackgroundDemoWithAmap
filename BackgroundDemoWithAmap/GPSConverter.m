@@ -85,8 +85,6 @@ const double ee = 0.00669342162296594323;
     TenLog = (int)(coordinate.longitude*10);
 
     NSString *query = [[NSString alloc]initWithFormat:@"SELECT offLat,offLog FROM gpsT WHERE lat=%d AND log=%d", TenLat, TenLog];
-//    NSString *query = [[NSString alloc]initWithFormat:@"SELECT * FROM gpsT"];
-    DDLogInfo(@"SQL query: %@", query);
 
     sqlite3_stmt *statement;
 
