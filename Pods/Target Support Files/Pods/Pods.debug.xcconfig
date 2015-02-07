@@ -1,0 +1,8 @@
+ARCHS = $(ARCHS_STANDARD)
+FRAMEWORK_SEARCH_PATHS = "$(PODS_ROOT)/AMap3DMap"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/AFNetworking" "${PODS_ROOT}/Headers/Public/AMap3DMap" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/DateTools" "${PODS_ROOT}/Headers/Public/UICKeyChainStore"
+OTHER_CFLAGS = $(inherited) -isystem "${PODS_ROOT}/Headers/Public" -isystem "${PODS_ROOT}/Headers/Public/AFNetworking" -isystem "${PODS_ROOT}/Headers/Public/AMap3DMap" -isystem "${PODS_ROOT}/Headers/Public/CocoaLumberjack" -isystem "${PODS_ROOT}/Headers/Public/DateTools" -isystem "${PODS_ROOT}/Headers/Public/UICKeyChainStore"
+OTHER_LDFLAGS = -ObjC -l"Pods-AFNetworking" -l"Pods-AMap3DMap" -l"Pods-CocoaLumberjack" -l"Pods-DateTools" -l"Pods-UICKeyChainStore" -l"stdc++.6.0.9" -l"z" -framework "CoreGraphics" -framework "CoreLocation" -framework "CoreTelephony" -framework "MAMapKit" -framework "MobileCoreServices" -framework "OpenGLES" -framework "QuartzCore" -framework "Security" -framework "SystemConfiguration"
+OTHER_LIBTOOLFLAGS = $(OTHER_LDFLAGS)
+PODS_ROOT = ${SRCROOT}/Pods

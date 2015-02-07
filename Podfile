@@ -1,0 +1,5 @@
+pod 'Amap3DMap', '2.4.2'
+pod 'AFNetworking', '2.3.1'
+pod 'UICKeyChainStore', '1.0.5'
+pod 'CocoaLumberjack', '2.0.0-rc'
+pod 'DateTools', '1.5.0'
