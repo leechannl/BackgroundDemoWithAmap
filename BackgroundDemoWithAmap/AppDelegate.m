@@ -138,9 +138,9 @@ static const int ddLogLevel = LOG_LEVEL_VERBOSE;
             //    NSString *password = @"qqqqqq";
             //            NSString *username = @"18627005213";
             //            NSString *password = @"123456";
-            //        NSString *username = @"15972206047";
-            //        NSString *password = @"123456";
-            
+//                    NSString *username = @"15972206047";
+//                    NSString *password = @"123456";
+
 //            CLLocationCoordinate2D adjustCoordinate = [GPSConverter convertToMarsUseAlgorithmWithCoordinate:location.coordinate];
             CLLocationCoordinate2D adjustCoordinate = [GPSConverter convertToMarsUseDBWithCoordinate:location.coordinate];
             DDLogInfo(@"Adjust latitude: %+.6f, longitude: %+.6f\n", adjustCoordinate.latitude, adjustCoordinate.longitude);
